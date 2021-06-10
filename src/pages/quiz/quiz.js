@@ -4,10 +4,14 @@ import PropTypes from "prop-types";
 // MUI stuff
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
+import Paper from "@material-ui/core/Paper";
 
 // styles
 import styles from "./Styles";
+
+// Components
+import TypographyText from "../../components/Typography/Typography";
+import ButtonQuiz from "../../components/Button/Button";
 
 const Quiz = (props) => {
   const { classes } = props;
@@ -21,7 +25,31 @@ const Quiz = (props) => {
         sm={12}
         className={classes.quizPageContainer}
       >
-        Quiz
+        <Grid item sm />
+        <Grid
+          container
+          item
+          xs={11}
+          md={5}
+          sm={5}
+          lg={4}
+          className={classes.paperWrapper}
+        >
+          <Paper elevation={0} className={classes.paperItems}>
+            <div style={{ marginBottom: "10%" }}>
+              <TypographyText
+                size="h6"
+                textClass={classes.smallHeader}
+                text="You will be presented ou will be presented ou will be presented ou will be presented ou will be presented"
+              />
+            </div>
+
+            <ButtonQuiz text="True" buttonClass={classes.button} />
+            <ButtonQuiz text="False" buttonClass={classes.button} />
+          </Paper>
+        </Grid>
+
+        <Grid item sm />
       </Grid>
     </Grid>
   );

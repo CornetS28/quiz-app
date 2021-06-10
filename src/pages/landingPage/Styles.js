@@ -5,7 +5,6 @@ const styles = (theme) => ({
   landingPageContainer: {
     minHeight: theme.palette.pageContainer.minHeight,
   },
-
   paperWrapper: {
     textAlign: "center",
     margin: "auto",
