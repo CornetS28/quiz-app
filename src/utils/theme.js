@@ -21,7 +21,7 @@ export default {
     },
 
     font: {
-      fontFamily: "Montserrat",
+      montserrat: "Montserrat",
     },
     pageWrapper: {
       flexGrow: 1,
