@@ -6,9 +6,12 @@ import Typography from "@material-ui/core/Typography";
 
 const TypographyText = ({ size, textClass, text }) => {
   return (
-    <Typography variant={size} gutterBottom className={textClass}>
-      {text}
-    </Typography>
+    <Typography
+      variant={size}
+      gutterBottom
+      className={textClass}
+      dangerouslySetInnerHTML={{ __html: text }}
+    />
   );
 };
 TypographyText.propTypes = {
