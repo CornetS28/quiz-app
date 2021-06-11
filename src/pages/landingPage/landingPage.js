@@ -6,13 +6,13 @@ import { useHistory } from "react-router-dom";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
-import Button from "@material-ui/core/Button";
 
 // styles
 import styles from "./Styles";
 
 // Components
 import TypographyText from "../../components/Typography/Typography";
+import Button from "../../components/Button/Button";
 
 const LandingPage = (props) => {
   const { classes } = props;
@@ -82,13 +82,10 @@ const LandingPage = (props) => {
 
             <Grid container item sm={12} xs={12}>
               <Button
-                variant="contained"
-                color="secondary"
-                className={classes.button}
+                buttonClass={classes.button}
+                text="Begin"
                 onClick={() => routeChange("/quiz")}
-              >
-                Begin
-              </Button>
+              />
             </Grid>
           </Paper>
         </Grid>
