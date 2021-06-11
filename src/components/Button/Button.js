@@ -20,7 +20,6 @@ const ButtonQuiz = ({ text, buttonClass, onClick }) => {
   );
 };
 ButtonQuiz.propTypes = {
-  classes: PropTypes.object.isRequired,
   buttonClass: PropTypes.string.isRequired,
 };
 

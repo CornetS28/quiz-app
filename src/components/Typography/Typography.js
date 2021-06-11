@@ -15,7 +15,7 @@ const TypographyText = ({ size, textClass, text }) => {
   );
 };
 TypographyText.propTypes = {
-  textClass: PropTypes.string.isRequired,
+  textClass: PropTypes.string,
   size: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
