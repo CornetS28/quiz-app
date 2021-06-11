@@ -166,15 +166,9 @@ const Quiz = (props) => {
                         }}
                       >
                         {item.result === "Correct" ? (
-                          <Check className={classes.check} fontSize="small" />
+                          <Check className={classes.icon} fontSize="small" />
                         ) : (
-                          <Close
-                            fontSize="small"
-                            style={{
-                              paddingRight: 10,
-                              marginBottom: -5,
-                            }}
-                          />
+                          <Close className={classes.icon} fontSize="small" />
                         )}
                         {item.result}
                       </p>

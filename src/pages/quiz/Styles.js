@@ -57,7 +57,7 @@ const styles = (theme) => ({
     marginTop: 0,
     paddingLeft: 10,
   },
-  check: {
+  icon: {
     paddingRight: 10,
     marginBottom: -5,
   },
