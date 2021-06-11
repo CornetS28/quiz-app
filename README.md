@@ -18,7 +18,7 @@ The web source code of Quiz-app - React
 
 ## Screenshots
 
-![Quiz App](https://github.com/CornetS28/address-book/blob/testing/src/images/quiz-app.png)
+![Quiz App](https://github.com/CornetS28/quiz-app/blob/feature/readme/src/images/quiz-app.png)
 
 ## Requirements
 
